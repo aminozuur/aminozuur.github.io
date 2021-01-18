@@ -36,20 +36,14 @@
 	.company:hover {
 		background: yellow;
 	}
-	
 	#add {
-		position: absolute;
-		top: 0px;
-		right: 0px;
-		background: #ff6600;
-		height: 79px;
-		width: 70px;
-		line-height: 79px;
-		border-left: 1px dashed white;
-		color: white;
-		font-size: 3rem;
+		background: springgreen; padding: 20px;
+	}
+	#add::after {
+		content: ""; background: inherit; padding: 0;
 	}
 	
+	#add:hover {background: lawngreen;}
 	/* MOBILE */
 	@media (max-width: 700px) {
 		nav {
@@ -58,10 +52,12 @@
 	}
 </style>
 
-<nav><h1>Rejected By Y-Combinator 😢</h1> <span id="add">+</span></nav>
+<nav><h1>Rejected By Y-Combinator 😢</h1></nav>
 <br>
 <h3>Interesting stories from those who didn't make it</h3>
-<br><br>
+<br>
+
+<div class="company" id="add">Add your story</div><br>
 
 <div class="company">Wordo Dictionary</div>
 <div class="company">VEED Video</div>

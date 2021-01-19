@@ -23,7 +23,9 @@ background: transparent;
 	width: 500px;
 	margin: 0 auto;
 }
-
+	
+a {color: #ff6600;}
+a:hover {color: blue;}
 nav {
 	background: #ff6600;
 	text-align: center;
@@ -58,42 +60,36 @@ nav {
 }
 
 #add:hover {background: lawngreen;}
-/* MOBILE */
-@media (max-width: 700px) {
-	nav {
-		zoom: 0.8;
-	}
-}
+
 .accordion {
 	font-weight: bolder;
-	background-color: #eee;
-	color: #444;
-	cursor: pointer;
-	padding: 18px;
-	width: 100%;
-	text-align: left;
-	border: none;
-	outline: none;
-	transition: 0.2s;
+    background-color: #d4d4d4;
+    color: #444;
+    cursor: pointer;
+    padding: 18 0 18 18;
+    width: fit-content;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.2s;
 }
 
 /* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .accordion.active, p.accordion:hover {
-	background-color: #ddd;
+	background-color: white;
 }
 
 /* Unicode character for "plus" sign (+) */
 .accordion:after {
-	content: '\2795'; 
-	font-size: 13px;
-	color: #777;
-	float: right;
-	margin-left: 5px;
+	content: "+";
+    background: cyan;
+    padding: 18px 15px;
+    margin-left: 15px;
 }
 
 /* Unicode character for "minus" sign (-) */
 .accordion.active:after {
-	content: "\2796"; 
+	content: "-"; 
 }
 
 /* Style the element that is used for the panel class */
@@ -110,6 +106,7 @@ div.panel {
 }
 
 div.panel.show {
+	text-align: justify;
 	padding: 20px 18px;
 	opacity: 1;
 	max-height: 5000px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
@@ -119,8 +116,19 @@ div.panel.show {
 	padding: 5px 10px;
 	text-align: center;
 }
-.madeby a {color: #ff6600;}
-.madeby a:hover {color: blue;}
+
+	
+/* MOBILE */
+@media (max-width: 700px) {
+	nav {
+		zoom: 0.8;
+	}
+	
+	#container {
+		width: 80%;
+	}
+	
+}
 </style>
 
 
@@ -136,8 +144,13 @@ div.panel.show {
 <div id="container">
 
 <p class="accordion">Wordo Dictionary</p>
-<div class="panel">Not to be obtuse, but some would say you're reversing cause and effect -- that the $10k and exhaustive background checks are the reasons that adoption has better success rates. I couldn't be less of an expert, but it's hard for me to imagine that the solution is as simple as "adoption is always better."
+<div class="panel">
+🔗 <a href="https://wor.do">https://wor.do</a>
 <br><br>
+<b>What does your company do?</b><br>
+Not to be obtuse, but some would say you're reversing cause and effect -- that the $10k and exhaustive background checks are the reasons that adoption has better success rates. I couldn't be less of an expert, but it's hard for me to imagine that the solution is as simple as "adoption is always better."
+<br><br>
+<b>Any guess on why you got rejected?</b><br>
 It does absolutely seem like there are many wonderful homes out there who aren't able to adopt because they aren't quite well-off enough, or the couple is gay, or some other factor that a reasonable person could look at and say "this shouldn't disqualify you from adopting."
 
 </div>

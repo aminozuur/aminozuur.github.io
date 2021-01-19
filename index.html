@@ -94,7 +94,7 @@ nav {
 
 /* Style the element that is used for the panel class */
 
-div.panel {
+.panel {
 	padding: 0 18px;
 	margin: 0px;
 	background-color: white;
@@ -103,9 +103,13 @@ div.panel {
 	overflow: hidden;
 	transition: 0.1s ease-in-out;
 	opacity: 0;
+	color: gray;
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, sans-serif;
+	line-height: 1.6rem;
 }
+.panel b {color: black;}
 
-div.panel.show {
+.panel.show {
 	text-align: justify;
 	padding: 20px 18px;
 	opacity: 1;

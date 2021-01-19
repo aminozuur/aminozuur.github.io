@@ -1,69 +1,211 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😢</text></svg>">
-
 <title>Rejected By Y-Combinator</title>
+
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-	body {
-		font-family: 'Roboto Mono', monospace;
-		margin: 0 auto;
-		text-align: center;
-		background: #f6f6ef;
-		text-shadow: 1px 1px white;
-	}
-	
+body {
+	font-family: 'Roboto Mono', monospace;
+	margin: 0 auto;
+	text-align: center;
+	background: #f6f6ef;
+	text-shadow: 1px 1px white;
+}
+
+::selection {
+background: transparent;
+}
+
+
+#container {
+	width: 500px;
+	margin: 0 auto;
+}
+
+nav {
+	background: #ff6600;
+	text-align: center;
+	padding: 3px;
+	text-shadow: none;
+}
+
+.company {
+	background: #d4d4d4;
+	padding: 5px 0px 5 10px;
+	cursor: pointer;
+	width: fit-content;
+	margin: 20px auto;
+	font-weight: bolder;
+	letter-spacing: 1px;
+}
+.company:after {
+	content: "+";
+	background: cyan;
+	padding: 5px 10px;
+	margin-left: 15px;
+}
+
+.company:hover {
+	background: yellow;
+}
+#add {
+	background: springgreen; padding: 20px;
+}
+#add::after {
+	content: ""; background: inherit; padding: 0;
+}
+
+#add:hover {background: lawngreen;}
+/* MOBILE */
+@media (max-width: 700px) {
 	nav {
-		background: #ff6600;
-		text-align: center;
-		padding: 3px;
-		text-shadow: none;
+		zoom: 0.8;
 	}
-	
-	.company {
-		background: #d4d4d4;
-		padding: 5px 0px 5 10px;
-		cursor: pointer;
-		width: fit-content;
-		margin: 20px auto;
-		font-weight: bolder;
-		letter-spacing: 1px;
-	}
-	.company:after {
-		content: "+";
-		background: cyan;
-		padding: 5px 10px;
-		margin-left: 15px;
-	}
-	
-	.company:hover {
-		background: yellow;
-	}
-	#add {
-		background: springgreen; padding: 20px;
-	}
-	#add::after {
-		content: ""; background: inherit; padding: 0;
-	}
-	
-	#add:hover {background: lawngreen;}
-	/* MOBILE */
-	@media (max-width: 700px) {
-		nav {
-			zoom: 0.8;
-		}
-	}
+}
+.accordion {
+	font-weight: bolder;
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.2s;
+}
+
+/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion.active, p.accordion:hover {
+	background-color: #ddd;
+}
+
+/* Unicode character for "plus" sign (+) */
+.accordion:after {
+	content: '\2795'; 
+	font-size: 13px;
+	color: #777;
+	float: right;
+	margin-left: 5px;
+}
+
+/* Unicode character for "minus" sign (-) */
+.accordion.active:after {
+	content: "\2796"; 
+}
+
+/* Style the element that is used for the panel class */
+
+div.panel {
+	padding: 0 18px;
+	margin: 0px;
+	background-color: white;
+	width: 100%;
+	max-height: 0;
+	overflow: hidden;
+	transition: 0.1s ease-in-out;
+	opacity: 0;
+}
+
+div.panel.show {
+	padding: 20px 18px;
+	opacity: 1;
+	max-height: 5000px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+.madeby {
+	font-size: 0.85rem;
+	padding: 5px 10px;
+	text-align: center;
+}
+.madeby a {color: #ff6600;}
+.madeby a:hover {color: blue;}
 </style>
 
+
 <nav><h1>Rejected By Y-Combinator 😢</h1></nav>
+
+
 <br>
 <h3>Interesting stories from those who didn't make it</h3>
 <br>
 
 <div class="company" id="add">Submit your story</div><br>
 
-<div class="company">Wordo Dictionary</div>
-<div class="company">VEED Video</div>
-<div class="company">Pajeet Technologies</div>
+<div id="container">
+
+<p class="accordion">Wordo Dictionary</p>
+<div class="panel">Not to be obtuse, but some would say you're reversing cause and effect -- that the $10k and exhaustive background checks are the reasons that adoption has better success rates. I couldn't be less of an expert, but it's hard for me to imagine that the solution is as simple as "adoption is always better."
+<br><br>
+It does absolutely seem like there are many wonderful homes out there who aren't able to adopt because they aren't quite well-off enough, or the couple is gay, or some other factor that a reasonable person could look at and say "this shouldn't disqualify you from adopting."
+
+</div>
+
+<p class="accordion">VEED Video</p>
+<div class="panel">50ish percent of all reunified children in the state of Georgia are back in care in less than a year.
+There is no data available for total recidivism, but I would more than guess that the vast majority of the negative outcome foster stats come primarily from multi-cycle children. Meaning they go in to care, get reunified, then go back in care, and wash and repeat. Tada we are at 16 years and the trauma fruit of "family preservation" policy is ripe for the picking.
+<br><br>
+
+"Family preservation" is the pervert uncle of a mantra that is the anchor that has dragged foster care outcomes down for decades. Supported by the "evidence based policy" con that has been propagated by services companies.<br><br>
+
+I have not had a child in my home that was not the victim of the family preservation cult. In case you don't know, let me explain the toxic buck passing shit storm of terrible that family preservation programs are.<br><br>
+
+This practice is the plan of taking child neglect cases and not removing children, but assigning a social worker to write a safe plan, such as parent can have no contact and child must live with grand parent that lives in the same house as the parent. Then when that fails 90 day later(80%), we do it again and wait 90 days, and then we wait 90 days, and then maybe we remove the children from the then child cruelty or child endangerment case. Then the charges, which have no impact on the permanency case for the child are usually dropped.<br><br>
+
+We then reunify the children after 12-18 months, and then start the 270 day safe plan again after 6 months or so, and then place the children in care, and then reunify after 12-18 months and then start all over. So all of the people that are telling the kids that they are there to help just keep placing children back with the parent that has demonstrated over 2.5 years at first reunification, their in ability to provide for the child.</div>
+
+<p class="accordion">Pajeet Technologies</p>
+<div class="panel">There is no data available for total recidivism, but I would more than guess that the vast majority of the negative outcome foster stats come primarily from multi-cycle children. Meaning they go in to care, get reunified, then go back in care, and wash and repeat. Tada we are at 16 years and the trauma fruit of "family preservation" policy is ripe for the picking.<br><br>
+
+"Family preservation" is the pervert uncle of a mantra that is the anchor that has dragged foster care outcomes down for decades. Supported by the "evidence based policy" con that has been propagated by services companies.<br><br>
+
+I have not had a child in my home that was not the victim of the family preservation cult. In case you don't know, let me explain the toxic buck passing shit storm of terrible that family preservation programs are.<br><br>
+
+This practice is the plan of taking child neglect cases and not removing children, but assigning a social worker to write a safe plan, such as parent can have no contact and child must live with grand parent that lives in the same house as the parent. Then when that fails 90 day later(80%), we do it again and wait 90 days, and then we wait 90 days, and then maybe we remove the children from the then child cruelty or child endangerment case. Then the charges, which have no impact on the permanency case for the child are usually dropped.<br><br>
+
+We then reunify the children after 12-18 months, and then start the 270 day safe plan again after 6 months or so, and then place the children in care, and then reunify after 12-18 months and then start all over. So all of the people that are telling the kids that they are there to help just keep placing children back with the parent that has demonstrated over 2.5 years at first reunification, their in ability to provide for the child.<br><br>
+
+This legal/policy structure allows for children to exist in a grossly traumatic cycle of permeant psychological and physical damage. This is a legal problem and not a foster care problem.<br><br>
+
+So much of the entire legal system is structured around 'reunify at all cost' that children simply pay all the risk cost of the second chances that bio parents are given. For this type of "justice" that is propagated by people that have no experience or non-"academic" knowledge of long term trauma in children.<br><br>
+
+Children should at least have the right to speedy permanency, and should not be forced to dole out second chances to bio parents that they can never get back. You only get one chance to by 5 or 4 or 3 or 2.<br><br>
+
+There is also a lot to be said for separating child welfare laws from family laws. I mention that because in many states we end up with divorce law that bleeds into welfare cases, specifically regarding visitation of children with parents, even physically or sexually abusive ones out of fear that a TPR may be overturned.</div>
+
+<div class="madeby">Made for fun<br>by <a href="https://twitter.com/aminozuur" target="_blank">@aminozuur</a></div>
+
+
+</div>
+
+<script>
+// this one toggles only one open at a time
+// Ref  - http://stackoverflow.com/questions/37745154/only-open-one-accordion-tab-at-one-time
+	
+document.addEventListener("DOMContentLoaded", function(event) { 
+
+var acc = document.getElementsByClassName("accordion");
+var panel = document.getElementsByClassName('panel');
+
+for (var i = 0; i < acc.length; i++) {
+    acc[i].onclick = function() {
+        var setClasses = !this.classList.contains('active');
+        setClass(acc, 'active', 'remove');
+        setClass(panel, 'show', 'remove');
+
+        if (setClasses) {
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+        }
+    }
+}
+
+function setClass(els, className, fnName) {
+    for (var i = 0; i < els.length; i++) {
+        els[i].classList[fnName](className);
+    }
+}
+
+});
+</script>

@@ -13,11 +13,14 @@ body {
 	background: #f6f6ef;
 	text-shadow: 1px 1px white;
 }
-
-::selection {
-background: transparent;
+::selection { 
+	background: #ff6600;
+	color: white;
+	text-shadow: none;
 }
-
+.accordion::selection {
+	background: transparent;
+}
 
 #container {
 	width: 500px;
@@ -82,9 +85,11 @@ nav {
 /* Unicode character for "plus" sign (+) */
 .accordion:after {
 	content: "+";
-    background: cyan;
+    background: #ff6600;
     padding: 18px 15px;
     margin-left: 15px;
+	text-shadow: none;
+	color: white;
 }
 
 /* Unicode character for "minus" sign (-) */

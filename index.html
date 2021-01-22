@@ -170,7 +170,9 @@ nav {
 	color: #d04800;
 
 }
-
+#howtoadd {
+	background: yellow;
+}
 	
 /* MOBILE */
 @media (max-width: 700px) {
@@ -195,7 +197,10 @@ nav {
 <h2>Interesting stories from those who didn't make it</h2>
 <small>Each year, over ten thousand people are rejected by Y-Combinator. This page is a directory that collects their stories, so that we can learn from each other.</small>	
 
-<div class="company" id="add">Submit your story</div><br>
+<div class="company" id="add" onclick="submitToggle()">Submit your story</div><br>
+<div id="howtoadd">
+To add your company, just fill out this form, and copy+paste it into my Twitter DM's. I will then add your company.
+</div>
 	
 <p class="accordion">Wordo Dictionary</p>
 <div class="panel">
@@ -247,6 +252,16 @@ I became suicidal.Lorem Ipsum is simply dummy text of the printing and typesetti
 </div>
 
 <script>
+var howtoadd = document.getElementById('howtoadd');
+howtoadd.style.display = "none";
+function submitToggle() {
+	if (howtoadd.style.display === "none") {
+		howtoadd.style.display = "block";
+	} else {
+		howtoadd.style.display = "none";
+	}
+}
+
 // this one toggles only one open at a time
 // Ref  - http://stackoverflow.com/questions/37745154/only-open-one-accordion-tab-at-one-time
 	

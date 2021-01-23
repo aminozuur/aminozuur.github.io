@@ -48,9 +48,12 @@ body {
 	width: 500px;
 	margin: 0 auto;
 }
+h2 {margin: 0 0 30px 0;}
 	
 a {color: #ff6600;}
+	
 a:hover {color: blue;}
+	
 nav {
 	background: #ff6600;
 	text-align: center;
@@ -67,6 +70,7 @@ nav {
 	font-weight: bolder;
 	letter-spacing: 1px;
 }
+	
 .company:after {
 	content: "+";
 	background: cyan;
@@ -77,6 +81,7 @@ nav {
 .company:hover {
 	background: yellow;
 }
+	
 #add {
 	background: #0ada71;
     padding: 10px 30px;
@@ -85,6 +90,7 @@ nav {
     color: white;
     text-shadow: 1px 1px green;
 }
+	
 #add::after {
 	content: ""; background: inherit; padding: 0;
 }
@@ -110,7 +116,6 @@ nav {
 	background-color: white;
 }
 
-/* Unicode character for "plus" sign (+) */
 .accordion:after {
 	content: "+";
     background: #ff6600;
@@ -120,13 +125,11 @@ nav {
 	color: white;
 }
 
-/* Unicode character for "minus" sign (-) */
 .accordion.active:after {
 	content: "-"; 
 }
 
 /* Style the element that is used for the panel class */
-
 .panel {
 	padding: 0 18px;
 	margin: 0px;
@@ -140,6 +143,7 @@ nav {
 	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, sans-serif;
 	line-height: 1.6rem;
 }
+	
 .panel b {color: black;}
 
 .panel.show {
@@ -147,7 +151,7 @@ nav {
 	padding: 20px 18px;
 	opacity: 1;
 	margin-top: -5px;
-	max-height: 5000px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+	max-height: 5000px; /* as long as its more than the height of the content (on all screen sizes) */
 }
 .madeby {
 	font-size: 0.85rem;
@@ -166,10 +170,12 @@ nav {
 }
 
 .madeby:hover {border: 1px dashed #ff6600;}
+	
 .madeby:hover u {
 	color: #d04800;
 
 }
+	
 #howtoadd {
 	background: palegreen;
     padding: 20px 10px;
@@ -177,7 +183,9 @@ nav {
 	border-radius: 20px;
 	margin: 25px 0 75px 0;
 }
+	
 #howtoadd a {color: blue;}
+	
 textarea {
 	width: 90%;
 	height: 300px;

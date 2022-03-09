@@ -1,5 +1,5 @@
 <meta charset="UTF-8" />
-<title>amin eftegarie</title>
+<title>Amin Eftegarie</title>
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
 
@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
 
 body {
-    font-family: 'Old Standard TT', serif;
+    font-family: 'Roboto Mono', monospace;
     margin: 20 auto;
     padding: 5%;
     width: fit-content;
@@ -25,6 +25,7 @@ h1 {
     font-size: 4rem;
     color: sienna;
     letter-spacing: 3px;
+    font-family: 'Old Standard TT', serif;
 }
 a {
     color: sienna;
@@ -34,6 +35,31 @@ p {
     font-family: 'Roboto Mono', monospace;
     text-align: justify;
 }
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: aquamarine;
+    border: none;
+    color: black;
+    font: inherit;
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+button:hover {
+    background: rgb(114, 243, 200);
+}
+
+details summary { 
+  cursor: pointer;
+  background: khaki;
+  width: fit-content;
+  padding: 5 30;
+  margin: 0 auto;
+}
+
 </style>
 <head><body></body></head>
 
@@ -41,11 +67,22 @@ p {
 
 <p>
   Hi, my name is Amin Eftegarie.<br>
-  I'm an amateur investor. I spend my time reading, learning, cooking, and talking to people close to me.<br><br>
-  I was born in Iran, and grew up in the Netherlands. I've visited 20+ countries and speak Dutch, English, and a bit of Persian. 
-  I once built and sold a profitable business. 
-  My email address is my first name @ my last name dot com<br><br>
-
+  I'm an amateur investor and lifelong learner. I spend my time reading, traveling, cooking, and talking to loved ones.<br><br>
   For my older brother Sam (the architect), kindly visit <a href="https://eftegarie.nl">eftegarie.nl</a>
 
+<details>
+    <summary>More about me</summary>
+    <p>
+    I was born in Iran, and grew up in the Netherlands. I've visited 20+ countries and speak Dutch, English, and a bit of Persian. 
+    I once built and sold a profitable business. 
+    My email address is my first name @ my last name dot com<br><br>
+    </p>
+</details>
+
+
+
+<!-- 
+    I've hidden this button. Because users shouldn't have to tap or click to finally see the list of blogposts
+<button>Visit my blog 👉🏼</button>
+-->
 </p>
